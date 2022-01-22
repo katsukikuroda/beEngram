@@ -448,14 +448,30 @@ a.profile-counter {
     padding: 0;
     margin: 0;
     list-style: none;
+    display: flex; /* 追加 */
+    flex-wrap: wrap; /* 追加 */
+    justify-content: center; /* 追加 */
+    align-items: center; /* 追加 */
 }
 
 .post-grid__item {
     display: block;
     padding: 4px;
+    flex: 0 0 auto; /* 追加 */
+    width: calc(100% / 3); /* 追加 */    
 }
 
 .post-grid__item img {
     display: block;
     width: 100%;
+}
+
+.post__comment {
+    font-size: 32px;
+    margin: 0 16px;
+}
+
+.post__comment a {
+    color: inherit;
+    text-decoration: none;
 }
